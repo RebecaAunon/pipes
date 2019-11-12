@@ -81,11 +81,51 @@
                 <td>number:'.2-2'</td>
                 <td>{{ salario | number:'.2-2'}}</td>
             </tr>
+            <tr>
+                <th>{{ valorDePromesa }}</th>
+                <td> async </td>
+                <td>{{ valorDePromesa | async }}</td>
+            </tr>
+            <tr>
+                <th>{{ fecha }}</th>
+                <td> date </td>
+                <td>{{ fecha | date }}</td>
+            </tr>
+            <tr>
+                <th>{{ fecha }}</th>
+                <td> date:medium </td>
+                <td>{{ fecha | date:'medium' }}</td>
+            </tr>
+            <tr>
+                <th>{{ fecha }}</th>
+                <td> date:'MMMM - dd' </td>
+                <td>{{ fecha | date:'MMMM - dd' }}</td>
+            </tr>
+            <tr>
+                <th>{{ nombre2 }}</th>
+                <td> capitalizado </td>
+                <td>{{ nombre2 | capitalizado }}</td>
+            </tr>
+            <!-- para probar los argumentos
+            <tr>
+              <th>{{ nombre2 }}</th>
+              <td> capitalizado </td>
+              <td>{{ nombre2 | capitalizado:1:2:3:4:5 }}</td>
+            </tr>
+            -->
+            <tr>
+                <th>{{ nombre2 }}</th>
+                <td> capitalizado </td>
+                <td>{{ nombre2 | capitalizado:false }}</td>
+            </tr>
         </tbody>
     </table>
     <h4>Slice</h4>
     <ul>
         <li *ngFor="let item of arreglo | slice:5:20">{{ item }}</li>
     </ul>
-
+    <h4>JSON</h4>
+    <pre>{{ heroe | json }}</pre> {{ heroe | json }}
 </div>
+
+<br><br><br><br><br><br><br><br><br><br>
