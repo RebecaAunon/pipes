@@ -23,8 +23,11 @@ export class AppComponent {
   };
 
   valorDePromesa = new Promise( (resolve, reject) => {
-  setTimeout( () => resolve( 'Llego la data!' ), 3500 );
+  setTimeout( () => resolve( 'Llego la info!' ), 3500 );
   });
 // fecha = '2017-10-14'; // también se puede escribir de este modo si queremos meter una fecha concreta
 fecha = new Date(); // así cogemos la fecha del sistema
+video = "1fAs9WPb2sY";
+activar:boolean  = true;
+
 }
